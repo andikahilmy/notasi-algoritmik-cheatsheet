@@ -35,16 +35,16 @@ output(a)
 
 ```
 type Struct:	< data1: integer,	{ integer dibolehkan }
-			data2: integer[0..69],	{ integer dengan range 0..69 }
-			data3: real,	{ tipe data real juga dibolehkan }
-			data4: array[0..9] of character >	{ karakter/string juga dibolehkan }
+		data2: integer[0..69],	{ integer dengan range 0..69 }
+		data3: real,	{ tipe data real juga dibolehkan }
+		data4: array[0..9] of character >	{ karakter/string juga dibolehkan }
 ```
 Contoh:
 
 ```
 type Time:    < hours: integer[0..23], 		{ 0 ≤ hours ≤ 23 }
-			minutes: integer[0..59], 	{ 0 ≤ minutes ≤ 59 }
-			seconds: integer[0..59] > 	{ 0 ≤ seconds ≤ 59 }
+		minutes: integer[0..59], 	{ 0 ≤ minutes ≤ 59 }
+		seconds: integer[0..59] > 	{ 0 ≤ seconds ≤ 59 }
 ```
 
 ### Operator
