@@ -4,7 +4,23 @@ Kitab lengkap notasi algoritmik --kalo ada yang kurang bisa tambahin aja
 
 Daftar isi:
 
-* Notasi Algoritmik Umum
+* [Notasi Algoritmik Umum](#notasi-algoritmik-umum)
+  * [Struktur Umum](#struktur-umum)
+  * [Tipe Data Umum](#tipe-data-umum)
+  * [Operator](#operator)
+  * [Tipe Data Bentukan](#tipe-data-bentukan)
+  * [Ekspresi](#ekspresi)
+  * [Nama Variabel dan Konstanta](#nama-variabel-dan-konstanta)
+  * [Array](#array)
+* [Fungsi dan Prosedur](#fungsi-dan-prosedur)
+  * [Fungsi](#fungsi)
+  * [Prosedur](#prosedur)
+* [Loop](#loop)
+  * [Repeat N Times](#repeat-n-times)
+  * [Repeat-Until](#repeat-until)
+  * [While](#while)
+  * [Iterate-Stop](#iterate-stop)
+  * [For/Traversal](#fortraversal)
 
 ## Notasi Algoritmik Umum
 
@@ -63,7 +79,7 @@ Catatan
 * Return dan `not` operator adalah operator uner
 * Bedakan antara `x < -2` dengan `x <- 2`
 
-### Tipe Data Struct
+### Tipe Data Bentukan
 
 ```
 type Struct:    < data1: integer,					{ integer dibolehkan }
@@ -88,7 +104,7 @@ Sekumpulan rumus perhitungan dari operan dan operator.
 
 Contoh: `2 + 8 * (x mod 4)`
 
-### Nama Variabel dan konstanta
+### Nama Variabel dan Konstanta
 
 Berikut ini adalah nama variabel/konstanta yang dibolehkan
 
@@ -103,6 +119,26 @@ Nama variabel yang tidak dibolehkan
 * `1cak`
 * `*GWS`
 * `kereta-api`
+
+### Array
+
+```
+NamaArray : array [valMin..valMax] of datatype
+```
+
+Keterangan:
+* `NamaArray` bisa apa saja
+* `valMin` biasanya adalah `0`, `valMax` terserah
+* `valMin` dan `valMax` harus merupakan tipe integer
+* `datatype` bebas, bisa data bentukan/struct
+
+Contoh:
+```
+arrayInt : array[0..8] of integer
+arrayJam : array[0..59] of Jam
+```
+
+Cara akses: `NamaArray[idx]` dengan `idx` harus di dalam range definisi array tersebut
 
 ## Fungsi dan Prosedur
 
@@ -192,17 +228,16 @@ stop <kondisi-berhenti>
 
 ### For/Traversal
 
-Beberapa bentuk yang dibolehkan:
 ```
-i traversal (0..10)
-    { langkah 1 }
-    { langkah 2 }
-    { langkah 3 dan seterusnya }
+<pencacah> traversal [valMin..valMax]
+    <instruksi>
 ```
 
+Note: pencacah biasanya diisi nama i, j, k, atau lainnya.
+
+Contoh:
+
 ```
-i traversal
+i traversal [0..8]
+    output(i)
 ```
-
-
-
