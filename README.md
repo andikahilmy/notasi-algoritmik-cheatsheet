@@ -146,7 +146,7 @@ Cara akses: `NamaArray[idx]` dengan `idx` harus di dalam range definisi array te
 
 Struktur umum
 ```
-function NamaFungsi(param1: type1, param2: type2, parametc: typeetc) → typehasil
+function NamaFungsi(input param1: type1, input param2: type2, input parametc: typeetc) → output typehasil
 { Mengembalikan fafifu dari wasweswos }
 
 KAMUS LOKAL
@@ -169,7 +169,7 @@ Catatan: jumlah parameter bebas, bisa juga tanpa parameter
 
 Struktur Umum
 ```
-procedure NamaProsedur(param1: type1, param2: type2, parametc: typeetc)
+procedure NamaProsedur(<input/output> param1: type1, <input/output> param2: type2, <input/output> parametc: typeetc)
 { Spek prosedur }
 { I.S. Initial State }
 { F.S. Final State }
@@ -186,7 +186,9 @@ Pemanggilan
 NamaProsedur(param1, param2, parametc)
 ```
 
-Catatan: jumlah parameter bebas, bisa juga tanpa parameter
+Catatan: 
+* Jumlah parameter bebas, bisa juga tanpa parameter
+* Setiap parameter bisa dijadikan input, output, atau keduanya (input/output)
 
 ## Loop
 
