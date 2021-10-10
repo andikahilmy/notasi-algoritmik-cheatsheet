@@ -122,7 +122,73 @@ ALGORITMA
     → hasil
 ```
 
+Pemanggilan
+```
+NamaFungsi(param1, param2, parametc)
+```
+
+Catatan: jumlah parameter bebas, bisa juga tanpa parameter
+
+### Prosedur
+
+Struktur Umum
+```
+procedure NamaProsedur(param1: type1, param2: type2, parametc: typeetc)
+{ Spek prosedur }
+{ I.S. Initial State }
+{ F.S. Final State }
+
+KAMUS LOKAL
+{ Nama variabel : type variabel }
+
+ALGORITMA
+{ Sederet instruksi, bebas mau apa aja }
+```
+
+Pemanggilan
+```
+NamaProsedur(param1, param2, parametc)
+```
+
+Catatan: jumlah parameter bebas, bisa juga tanpa parameter
+
 ## Loop
+
+### Repeat N Times
+
+Pengulangan berdasarkan banyak pengulangan
+```
+repeat n times
+    { n bilangan bulat terdefinisi }
+    <aksi>
+```
+
+### Repeat-Until
+
+Pengulangan sampai kondisi berhenti, cek kondisi di akhir
+```
+repeat
+    <aksi>
+until <kondisi-berhenti>
+```
+
+### While
+
+Pengulangan sampai kondisi berhenti, cek kondisi di awal
+```
+while <kondisi-loop> do
+    <aksi>
+```
+
+### Iterate-Stop
+
+Gabungan bentuk while dan repeat-until, cek kondisi di tengah (di bagian stop)
+```
+iterate
+    <aksi-1>
+stop <kondisi-berhenti>
+    <aksi-2>
+```
 
 ### For/Traversal
 
