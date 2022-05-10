@@ -2,6 +2,8 @@
 
 Kitab lengkap notasi algoritmik --kalo ada yang kurang bisa tambahin aja
 
+## DISCLAIMER: Pemilik Repositori tidak akan bertanggung jawab untuk segala tindak kecurangan pada ujian (closed book) yang melibatkan repositori ini!!!
+
 Daftar isi:
 
 * [Notasi Algoritmik Umum](#notasi-algoritmik-umum)
